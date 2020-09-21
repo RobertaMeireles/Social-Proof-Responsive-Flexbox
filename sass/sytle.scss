@@ -1,0 +1,245 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;   
+}
+
+html {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px
+}
+
+
+.container{
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10% auto 7%;
+    max-width: 70%;
+    color:$magenta;
+
+    h1{
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 8% auto 10%;
+        line-height: 25px;
+    }
+}
+
+.reviews{
+    
+    .reviewsInfo{
+        max-width: auto;
+        margin: 0 auto;
+        height: auto;
+        padding: auto;
+        background-color: $lightGrayishMagenta;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+
+    img{
+        padding-left:30%;
+    }
+
+    .info{
+        font-size: 1rem;
+        font-weight: 700;
+        padding-top: 0;
+        padding-bottom: 15px;
+        margin: 3%;
+    }
+}
+
+.infoUsers{
+
+        display: flex;
+        flex-direction: column;
+        
+        
+    .nameAndPhoto{
+        width: 70%;
+        height: 80%;
+        margin: 2% auto;
+        padding: 5%;
+        background-color: $magenta;
+        border: 1px solid $magenta;
+        border-radius: 5%;
+
+        p {
+            color: white;
+            line-height: $line;
+            padding-top:5%;
+            text-align:justify;
+        }
+
+        img{
+            display: flex;
+            width: 50px;
+            border-radius: 50%;
+        }
+    
+
+        .item {
+            display: flex;
+        }
+
+        .infoName{
+            padding-left: 10%;
+            align-self: center;
+            font-size: 15px;
+
+            .item1{
+                padding-left: 5%;
+            }
+            
+            h1{
+                color: white;
+                padding-bottom: 5%;
+            }
+
+            h2{
+                padding-left: 8px;
+                color: $softPink;
+            }
+
+        }
+
+    }   
+
+}
+
+footer {
+
+    padding: 30px 0;
+
+    p {
+        padding: 15px 0;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    
+    .header{
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 10% auto 2%;
+        justify-content: space-between;
+    
+        .start{
+            max-width: 40%;
+        }
+        
+        h1{
+            max-width: 90%;
+            text-align: left;
+            display: flex;
+        }
+    
+        p{
+            max-width: 90%;
+            margin: 3% 0;
+            text-align: left;
+        }
+    }
+
+    .reviews{
+    
+        .reviewsInfo{
+            direction: flex;
+            justify-content: space-between;
+            width: 500px;
+        }
+
+        .reviewsInfo1{
+            display: flex;
+            margin-right: 100px;
+            margin-bottom: 5%;
+        }
+
+        .reviewsInfo2{
+            display: flex;
+            margin-right: 50px;
+            margin-bottom: 5%;
+        }
+
+        .reviewsInfo3{
+            display: flex;
+            margin-right: 0;
+            margin-bottom: 5%;
+        }
+    
+        ul{
+            width: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px 0 20px 50px;
+        }
+
+        li{
+            padding-left: 2%;
+        }
+    
+        .info{
+            width: auto;
+            display: flex;
+            font-size: 0.9rem;
+            font-weight: 700;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 10px 50px 10px 0 ;
+
+        }
+    }
+
+
+    .infoUsers{
+        display: flex;
+        flex-direction: row;
+        
+        .nameAndPhoto{
+            width: 70%;
+            height: 80%;
+            margin: 0 3%;
+            padding: 60px;
+        }   
+
+        .item3{
+            margin-top: 6%;
+
+        }
+        .item2{
+            margin-top: 3%;
+        }
+
+    }
+}
+
+
